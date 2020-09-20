@@ -1,0 +1,32 @@
+.articletitle {
+    font-size: 40px;
+    text: black;
+    padding: auto;
+    margin: auto;
+    padding-bottom: 2rem;
+    
+}
+.container-item {
+    border: solid 1px red;
+    width: 80%;
+    padding: auto;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    -webkit-box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+     box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+     border-radius: 44px 44px 44px 44px;
+-moz-border-radius: 44px 44px 44px 44px;
+-webkit-border-radius: 44px 44px 44px 44px;
+border: 0px solid #000000;
+}
+.box-form {
+ 
+    width: 90vh;
+    padding: auto;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}

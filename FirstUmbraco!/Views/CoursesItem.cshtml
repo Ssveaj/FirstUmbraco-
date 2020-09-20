@@ -1,0 +1,20 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.CoursesItem>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!-- Main -->
+<section id="main" class="wrapper">
+    <div class="container">
+
+        <header class="major special">
+            <h2>@Model.Value("courseTitle")</h2>
+            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+        </header>
+
+        <a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+        <p>@Model.Value("courseContent")</p>
+        
+    </div>
+</section>
