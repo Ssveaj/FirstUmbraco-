@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "4994e59d8235f3dd")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "ef6f0450f664f343")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -161,6 +161,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
 		[ImplementPropertyType("courseTitle")]
 		public string CourseTitle => this.Value<string>("courseTitle");
+
+		///<summary>
+		/// PhotoImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
+		[ImplementPropertyType("photoImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent PhotoImage => this.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("photoImage");
 	}
 
 	/// <summary>Courses Main</summary>

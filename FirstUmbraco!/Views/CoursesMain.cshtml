@@ -12,20 +12,26 @@
 				<h2>@Model.Value("pageTitle")</h2>
 				<p>Check our courses</p>
 			</section>
-			
 <!-- Main -->
 <section id="main" class="wrapper">
     <div class="container">
-
         <header class="major special">
             <h2>@Model.Value("coursesTitle")</h2>
         </header>
-
-       
     </div>
 </section>
 
 <div class="container-item">
+
+@{
+    var typedMediaPickerSingle = Model.Value<IPublishedContent>("photoImage");
+    if (typedMediaPickerSingle != null)
+    {
+        <p>@typedMediaPickerSingle.Url</p>
+        <img src="@typedMediaPickerSingle.Url" style="width:200px" alt="@typedMediaPickerSingle.Value("alt")" />
+    }
+}
+
 @{
 	var selection = Umbraco.Content(Guid.Parse("3085d144-2ea4-459f-8269-cff8a0de1713"))
     .ChildrenOfType("coursesItem")
@@ -33,17 +39,26 @@
     .OrderByDescending(x => x.CreateDate);
 }
 <ul>
-	@foreach (var item in selection)
+	@foreach (ContentModels.CoursesItem item in selection)
 	{
-		<article class="special">
-        <div class="articletitle">@item.Name</div>
-        <img src="images/web-logo.png" alt="" />
-        <div class="articlepreview">@Html.Truncate(item.Value("courseContent").ToString(), 200, true)</div>
-    </article>
-<hr/>
+		    <article class="special">
+		        @try
+		        
+		        {
+		          <div>
+		               <img src="@item.PhotoImage.Url" style="width:200px" />
+		          </div>
+		        }
+		        catch (Exception e) 
+		        {
+		        
+		        }
+             <div class="articletitle">@item.Name</div>
+             <div class="articlepreview">@Html.Truncate(item.Value("courseContent").ToString(), 200, true)</div>
+            </article>
+		<hr/>
 	}
 </ul>
 
+
 </div>
-
-
