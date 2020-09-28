@@ -12,12 +12,12 @@
 
  <link rel="stylesheet" href="/css/custom.css"/>
 
-<div class="box-form">
+<div class="contact-container">
 <div class="umbraco-forms-page form-horizontal">
 
     @if (string.IsNullOrEmpty(Model.CurrentPage.Caption) == false)
     {
-        <h4 class="umbraco-forms-caption">@Model.CurrentPage.Caption</h4>
+        <h4 class="umbraco-forms-caption"></h4>
     }
                 
     @if (Model.ShowValidationSummary)

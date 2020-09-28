@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<FirstUmbraco_.Models.LoginModel>
+@using Umbraco.Web
+ 
+ 
+ <link rel="stylesheet" href="/css/custom.css"/>
+ 
+<div class="login-container">
+@if (!Umbraco.MemberIsLoggedOn())
+{<div class="login-label">
+    @using (Html.BeginUmbracoForm("SubmitLogin", "member", System.Web.Mvc.FormMethod.Post, new { id = "login" }))
+    { 
+        @Html.AntiForgeryToken()
+        @Html.LabelFor(m => m.Username)
+        @Html.TextBoxFor(m => m.Username, new { placeholder = "Username" })
+
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password, new { placeholder = "Password" })
+        <div class="login-button">
+        @Html.ValidationSummary()
+        <button name="login" type="submit">Login</button>
+        </div>
+    }
+    </div>
+}
+else
+{
+    Html.RenderAction("RenderLogout", "member");
+}
+
+</div>

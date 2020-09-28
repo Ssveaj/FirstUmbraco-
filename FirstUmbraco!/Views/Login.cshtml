@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+	Layout = "Master.cshtml";
+}
+
+	<!-- Banner -->
+			<section id="banner">
+				<i class="icon fa-diamond"></i>
+				<h2>@Model.Value("header")</h2>
+				<p>@Model.Value("bodyText")</p>
+				<ul class="actions">
+				</ul>
+			</section>
+			
+@{ Html.RenderAction("RenderLogin", "Member"); }
+

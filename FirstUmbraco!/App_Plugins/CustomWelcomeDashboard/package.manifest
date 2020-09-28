@@ -15,6 +15,6 @@
     "~/App_Plugins/CustomWelcomeDashboard/customwelcomedashboard.controller.js"
   ],
   "css": [
-    "~/App_Plugins/CustomWelcomeDashboard/customWelcomeDashboard.css"
+    "~/App_Plugins/CustomWelcomeDashboard/customwelcomeDashboard.css"
   ]
 }

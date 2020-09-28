@@ -1,3 +1,5 @@
+/*------------ Course - Form -------------*/
+
 .articletitle {
     font-size: 40px;
     text: black;
@@ -29,4 +31,63 @@ border: 0px solid #000000;
     margin-top: 2rem;
     margin-bottom: 2rem;
     
+}
+
+
+/*------------ Login - form -------------*/
+.login-container {
+    height: 40vh;
+    width: 90vh;
+    padding: auto;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    -webkit-box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+     box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+     border-radius: 44px 44px 44px 44px;
+     -moz-border-radius: 44px 44px 44px 44px;
+    -webkit-border-radius: 44px 44px 44px 44px;
+}
+.login-label {
+    width: 60vh;
+    margin: auto;
+    padding: auto;
+    padding-top: 2rem;
+}
+.login-button {
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    padding: auto;
+    padding-left: 12rem;
+}
+
+
+/*------------ Contact - form -------------*/
+
+.contact-container {
+    height: 60vh;
+    width: 90vh;
+    padding: auto;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    -webkit-box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+     box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+     border-radius: 44px 44px 44px 44px;
+     -moz-border-radius: 44px 44px 44px 44px;
+    -webkit-border-radius: 44px 44px 44px 44px;
+}
+.row-fluid {
+    width: 60vh;
+    padding: auto;
+    margin: auto;
+    padding-top: 4rem;
+}
+.col-sm-offset-2 {
+    padding: auto;
+    margin: auto;
+    padding-left: 12rem;
 }
