@@ -62,6 +62,29 @@ border: 0px solid #000000;
     padding: auto;
     padding-left: 12rem;
 }
+.container-welcome {
+    margin: auto;
+    padding: auto;
+    font-size: 20px;
+    padding-left: 18rem;
+    padding-top: 4rem;
+}
+
+
+.register-container {
+    height: 60vh;
+    width: 100vh;
+    padding: auto;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    -webkit-box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+     box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+     border-radius: 44px 44px 44px 44px;
+     -moz-border-radius: 44px 44px 44px 44px;
+    -webkit-border-radius: 44px 44px 44px 44px;
+}
 
 
 /*------------ Contact - form -------------*/

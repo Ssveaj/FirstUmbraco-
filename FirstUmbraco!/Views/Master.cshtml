@@ -34,7 +34,21 @@
 					<li><a href="/Course">Courses</a></li>
 					<li><a href="/Contact-Us">Contact Us</a></li>
 					<li><a href="/Login">Log In</a></li>
+					<li><a href="/Register">Register</a></li>
 				</ul>
+				@if (Umbraco.MemberIsLoggedOn())
+{
+    using (Html.BeginUmbracoForm("SubmitLogout", "member", FormMethod.Post, new { id = "logout" }))
+    {
+        Html.AntiForgeryToken();
+        var myUser = Membership.GetUser();
+        if (myUser != null)
+        {
+            @:<p><strong>Logged in as</strong> <span>@myUser.UserName</span></p>
+            @:<button name="login" type="submit"><span>logout</span> <i class="fa fa-arrow-right"></i></button>
+        }
+    }
+}
 			</nav>
 			
 			@RenderBody()
