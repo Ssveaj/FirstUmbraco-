@@ -38,3 +38,7 @@ Could not find any UmbracoForms licensing files in C:\Users\Ferm\source\repos\Fi
 Could not find any UmbracoForms licensing files in C:\Users\Ferm\source\repos\FirstUmbraco!\FirstUmbraco!\bin:
 Could not find any UmbracoForms licensing files in C:\Users\Ferm\source\repos\FirstUmbraco!\FirstUmbraco!\bin:
 Could not find any UmbracoForms licensing files in C:\Users\Ferm\source\repos\FirstUmbraco!\FirstUmbraco!\bin:
+Could not find any UmbracoForms licensing files in C:\Users\Ferm\Desktop\pyff\FirstUmbraco!\FirstUmbraco!\bin:
+Could not find any UmbracoForms licensing files in C:\Users\Ferm\Desktop\pyff\FirstUmbraco!\FirstUmbraco!\bin:
+Could not find any UmbracoForms licensing files in C:\Users\Ferm\Desktop\pyff\FirstUmbraco!\FirstUmbraco!\bin:
+Could not find any UmbracoForms licensing files in C:\Users\Ferm\Desktop\pyff\FirstUmbraco!\FirstUmbraco!\bin:
