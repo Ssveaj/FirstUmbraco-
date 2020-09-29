@@ -1,0 +1,64 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.EmployeesMain>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+ <link rel="stylesheet" href="/css/custom.css"/>
+ 
+<!-- Banner -->
+			<section id="banner">
+				<i class="icon fa-diamond"></i>
+				<h2>About us</h2>
+			</section>
+			
+<!-- Main -->
+<section id="main" class="wrapper">
+    <div class="container">
+        <header class="major special">
+        </header>
+    </div>
+</section>
+
+<div class="container-item">
+
+@{
+    var typedMediaPickerSingle = Model.Value<IPublishedContent>("employeePhoto");
+    if (typedMediaPickerSingle != null)
+    {
+        <p>@typedMediaPickerSingle.Url</p>
+        <img src="@typedMediaPickerSingle.Url" style="width:200px" alt="@typedMediaPickerSingle.Value("alt")" />
+    }
+}
+
+
+@{
+	var selection = Umbraco.Content(Guid.Parse("ee44f0e7-4ccb-436a-ade8-e303940cc680"))
+    .ChildrenOfType("employeesItem")
+    .Where(x => x.IsVisible())
+    .OrderByDescending(x => x.CreateDate);
+}
+<ul>
+	@foreach (ContentModels.EmployeesItem item in selection)
+	{
+	
+	  <article class="special">
+	      @try
+	     
+	       {
+	         <div>
+	             <img src="@item.EmployeePhoto.Url" style="width:200px" />
+	         </div>
+	       }
+	       catch (Exception e)
+	       {
+	       
+	       }
+	       <div class="articletitle">@item.Name</div>
+	       <div class="articlepreview">@Html.Truncate(item.Value("employeeContent").ToString(), 200, true)</div>
+    		</article>
+	   <hr/>
+	 }
+</ul>
+
+</div>
