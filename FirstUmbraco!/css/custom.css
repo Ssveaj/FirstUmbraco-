@@ -114,3 +114,20 @@ border: 0px solid #000000;
     margin: auto;
     padding-left: 12rem;
 }
+
+
+
+.contact-label {
+    width: 80vh;
+    margin: auto;
+    padding: auto;
+    padding-top: 4rem;
+}
+.contact-button {
+    padding: auto;
+    margin: auto;
+    height: 10vh;
+    padding-left: 21rem;
+    margin-top: -1rem;
+
+}

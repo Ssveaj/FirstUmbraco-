@@ -296,6 +296,7 @@
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Contact.cshtml" />
     <Content Include="Views\Master.cshtml" />
     <Content Include="Views\Partials\_RegisterMember.cshtml" />
     <Content Include="Web.config" />
@@ -305,7 +306,9 @@
     <Compile Include="App_Start\UmbracoCustomOwinStartup.cs" />
     <Compile Include="App_Start\UmbracoGoogleAuthExtensions.cs" />
     <Compile Include="App_Start\UmbracoStandardOwinStartup.cs" />
+    <Compile Include="Controllers\ContactFormController.cs" />
     <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Models\ContactFormViewModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -335,6 +338,8 @@
     <Content Include="Views\Partials\BlockList\Default.cshtml" />
     <Content Include="Views\Partials\_Login.cshtml" />
     <Content Include="Views\Partials\_Logout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Partials\_ContactForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -343,6 +348,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\ContactForm\" />
     <Folder Include="Views\Member\" />
   </ItemGroup>
   <PropertyGroup>

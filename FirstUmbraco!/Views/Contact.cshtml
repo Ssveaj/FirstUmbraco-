@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Contact>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@using FirstUmbraco_.Models;
+@{
+    Layout = "Master.cshtml";
+}
+
+<!-- Banner -->
+<section id="banner">
+    <i class="icon fa-diamond"></i>
+    <h2>@Model.Value("pageTitle")</h2>
+</section>
+
+
+@Html.Partial("_ContactForm", new ContactFormViewModel())

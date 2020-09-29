@@ -1,0 +1,33 @@
+﻿@model FirstUmbraco_.Models.ContactFormViewModel
+
+ <link rel="stylesheet" href="/css/custom.css"/>
+
+@using (Html.BeginUmbracoForm("Submit", "ContactForm"))
+
+
+{ <div class="contact-container">
+    <div class="contact-label">
+        <div>
+            @Html.LabelFor(m => m.Name)
+            @Html.TextBoxFor(m => m.Name)
+            @Html.ValidationMessageFor(m => m.Name)
+        </div>
+    <br/>
+    <div>
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+    <br/>
+    <div>
+        @Html.LabelFor(m => m.Message)
+        @Html.TextAreaFor(m => m.Message)
+        @Html.ValidationMessageFor(m => m.Message)
+    </div>
+    <br/>
+    </div>
+    <div class="contact-button">
+    <input type="submit" name="Submit" value="Submit" />
+    </div>
+    </div>
+}
