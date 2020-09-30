@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "3f04dc09bec07dd9")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "91239fa53a1a9b5c")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -60,6 +60,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
 		[ImplementPropertyType("footer")]
 		public global::System.Web.IHtmlString Footer => this.Value<global::System.Web.IHtmlString>("footer");
+
+		///<summary>
+		/// Intro Video
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
+		[ImplementPropertyType("introVideo")]
+		public global::System.Web.IHtmlString IntroVideo => this.Value<global::System.Web.IHtmlString>("introVideo");
 
 		///<summary>
 		/// Page Title: Main of the page
