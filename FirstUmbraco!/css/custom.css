@@ -96,8 +96,8 @@ border: 0px solid #000000;
     margin: auto;
     margin-left: 19rem;
 }
-/*------------ Contact - form -------------*/
 
+/*------------ Contact - form/controller -------------*/
 .contact-container {
     height: 60vh;
     width: 90vh;
@@ -112,25 +112,11 @@ border: 0px solid #000000;
      -moz-border-radius: 44px 44px 44px 44px;
     -webkit-border-radius: 44px 44px 44px 44px;
 }
-.row-fluid {
-    width: 60vh;
-    padding: auto;
-    margin: auto;
-    padding-top: 4rem;
-}
-.col-sm-offset-2 {
-    padding: auto;
-    margin: auto;
-    padding-left: 12rem;
-}
-
-
-/*------------ Contact - form/controller -------------*/
 .contact-label {
     width: 80vh;
     margin: auto;
     padding: auto;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 .contact-button {
     padding: auto;
@@ -138,7 +124,6 @@ border: 0px solid #000000;
     height: 10vh;
     padding-left: 21rem;
     margin-top: -1rem;
-
 }
 .contact-map {
     padding: auto;
