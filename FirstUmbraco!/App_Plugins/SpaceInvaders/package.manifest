@@ -1,0 +1,18 @@
+{
+    "dashboards": [
+      {
+        "alias": "SpaceInvaders",
+        "view": "~/App_Plugins/SpaceInvaders/index.html",
+        "sections": [ "content" ],
+        "weight": 1,
+        "access": [
+          { "deny": "translator" },
+          { "grant": "admin" }
+        ]
+      }
+    ],
+  javascript: [
+    "//cdn.jsdelivr.net/phaser/2.5.0/phaser.min.js",
+    "~/App_Plugins/SpaceInvaders/js/invaders.controller.js"
+  ]
+}
