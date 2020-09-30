@@ -61,8 +61,9 @@ else
     using (Html.BeginUmbracoForm<UmbRegisterController>
     ("HandleRegisterMember"))
     { <div class="register-container">
+        <div class="register-label">
         <fieldset>
-            <legend>Register Member</legend>
+            <legend></legend>
 
             @Html.ValidationSummary("registerModel", true)
 
@@ -106,9 +107,9 @@ else
             @Html.HiddenFor(m => registerModel.RedirectUrl)
             @Html.HiddenFor(m => registerModel.UsernameIsEmail)
 
-            <button>Register</button>
+            <button>Sign up</button>
         </fieldset>
-
+</div>
     </div>
     }
     }

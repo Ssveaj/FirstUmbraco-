@@ -5,11 +5,18 @@
     Layout = "Master.cshtml";
 }
 
+<link rel="stylesheet" href="/css/custom.css"/>
+
 <!-- Banner -->
 <section id="banner">
     <i class="icon fa-diamond"></i>
     <h2>@Model.Value("pageTitle")</h2>
 </section>
 
+<div class="contact-map">
+<h2>@Model.Value("contactBodyText")</h2>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.6064758373886!2d11.970582516145015!3d57.70615534712458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff364dc9e2361%3A0xca471dc85497ad54!2sStora%20Nygatan%2013%2C%20411%2008%20G%C3%B6teborg!5e0!3m2!1ssv!2sse!4v1601462933626!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+</div>
 
 @Html.Partial("_ContactForm", new ContactFormViewModel())

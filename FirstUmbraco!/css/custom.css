@@ -70,7 +70,7 @@ border: 0px solid #000000;
     padding-top: 4rem;
 }
 
-
+/*------------ Register - form -------------*/
 .register-container {
     height: 60vh;
     width: 100vh;
@@ -85,8 +85,17 @@ border: 0px solid #000000;
      -moz-border-radius: 44px 44px 44px 44px;
     -webkit-border-radius: 44px 44px 44px 44px;
 }
-
-
+.register-label {
+    width: 80vh;
+    padding-top: 2rem;
+    padding: auto;
+    margin: auto;
+}
+.register-label button {
+    padding: auto;
+    margin: auto;
+    margin-left: 19rem;
+}
 /*------------ Contact - form -------------*/
 
 .contact-container {
@@ -116,7 +125,7 @@ border: 0px solid #000000;
 }
 
 
-
+/*------------ Contact - form/controller -------------*/
 .contact-label {
     width: 80vh;
     margin: auto;
@@ -130,4 +139,16 @@ border: 0px solid #000000;
     padding-left: 21rem;
     margin-top: -1rem;
 
+}
+.contact-map {
+    padding: auto;
+    margin: auto;
+    padding-left: 40rem;
+    margin-top: 6rem;
+}
+.contact-map h2 {
+    padding: auto;
+    padding: auto;
+    width: 62vh;
+    padding-left: 15rem;
 }
