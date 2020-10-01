@@ -7,6 +7,7 @@
 @using Umbraco.Core.Models;
 @using Umbraco.Core.Services;
 
+<link rel="stylesheet" href="/css/custom.css"/>
 
 @{
     @*
@@ -53,8 +54,9 @@
      IMemberService memberService = Services.MemberService;
      memberService.AssignRole((int)m.ProviderUserKey, "Members");
 
-    @* This message will show if registerModel.RedirectUrl is not defined (default) *@
+ <div class="register-success">  @* This message will show if registerModel.RedirectUrl is not defined (default) *@
 <p>Registration succeeded.</p>
+</div>
 }
 else
 {

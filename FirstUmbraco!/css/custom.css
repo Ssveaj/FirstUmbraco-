@@ -96,6 +96,21 @@ border: 0px solid #000000;
     margin: auto;
     margin-left: 19rem;
 }
+.register-success{
+    eight: 60vh;
+    width: 100vh;
+    padding: auto;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-left: 20rem;
+    -webkit-box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+     box-shadow: 6px 8px 36px 4px rgba(0,0,0,0.75);
+     border-radius: 44px 44px 44px 44px;
+     -moz-border-radius: 44px 44px 44px 44px;
+    -webkit-border-radius: 44px 44px 44px 44px;
+}
 
 /*------------ Contact - form/controller -------------*/
 .contact-container {
