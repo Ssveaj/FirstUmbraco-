@@ -302,6 +302,7 @@
     <Content Include="Views\Contact.cshtml" />
     <Content Include="Views\Master.cshtml" />
     <Content Include="Views\Partials\_RegisterMember.cshtml" />
+    <Content Include="Views\ThanksForMessage.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

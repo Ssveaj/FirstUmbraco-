@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ThanksForMessage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<link rel="stylesheet" href="/css/custom.css"/>
+
+<!-- Banner -->
+<section id="banner">
+    <i class="icon fa-diamond"></i>
+        <h2>@Model.Value("pageText")</h2>
+</section>
+
+<section>
+   <div class="thanks-container">
+       <div class="thanks-text">
+           <p>@Model.Value("pageBodyText")</p>
+       </div>
+       <div class="thanks-picture">
+            @Model.Value("pageBodyPicture")
+       </div>
+</div>
+</section>
+

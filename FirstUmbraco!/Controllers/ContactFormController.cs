@@ -13,7 +13,8 @@ namespace FirstUmbraco_.Controllers
     {
         public ActionResult RenderContactForm()
         {
-            return PartialView("_ContactForm", new ContactFormViewModel());
+           
+                return PartialView("_ContactForm", new ContactFormViewModel());
         }
         [HttpPost]
         public ActionResult HandleContactForm(ContactFormViewModel model)
@@ -42,7 +43,8 @@ namespace FirstUmbraco_.Controllers
 
             TempData["IsSuccessful"] = true;
 
-            return RedirectToCurrentUmbracoPage();
+            return PartialView("ThanksForMessage");
+
         }
     }
 }

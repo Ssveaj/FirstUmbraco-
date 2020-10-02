@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "91239fa53a1a9b5c")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "8bbf6a7f92630697")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -401,6 +401,53 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
 		[ImplementPropertyType("pageTitle")]
 		public string PageTitle => this.Value<string>("pageTitle");
+	}
+
+	/// <summary>Thanks For Message</summary>
+	[PublishedModel("thanksForMessage")]
+	public partial class ThanksForMessage : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
+		public new const string ModelTypeAlias = "thanksForMessage";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ThanksForMessage, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public ThanksForMessage(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// PageBodyPicture
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
+		[ImplementPropertyType("pageBodyPicture")]
+		public global::System.Web.IHtmlString PageBodyPicture => this.Value<global::System.Web.IHtmlString>("pageBodyPicture");
+
+		///<summary>
+		/// PageBodyText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
+		[ImplementPropertyType("pageBodyText")]
+		public string PageBodyText => this.Value<string>("pageBodyText");
+
+		///<summary>
+		/// PageText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.7.0")]
+		[ImplementPropertyType("pageText")]
+		public string PageText => this.Value<string>("pageText");
 	}
 
 	/// <summary>Folder</summary>
