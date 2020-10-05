@@ -43,7 +43,7 @@ namespace FirstUmbraco_.Controllers
 
             TempData["IsSuccessful"] = true;
 
-            return PartialView("ThanksForMessage");
+            return Redirect("/thanks-for-the-message");
 
         }
     }
