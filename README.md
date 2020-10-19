@@ -23,7 +23,11 @@ Inlämningsuppgift 2:
 
 Bedömningsnivå för G:
 
-    • Använt dig av Document Types, Data Types, Templates, Plugins, Controllers, ViewModels för att bygga din hemsida.
+    • Använt dig av 
+    Document Types, 
+    Data Types, Templates, 
+    Plugins, Controllers, 
+    ViewModels för att bygga din hemsida.
 
 Bedömingsnivå för VG:
 
