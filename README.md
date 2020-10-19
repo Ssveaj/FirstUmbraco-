@@ -2,10 +2,15 @@
 
 
 Mål i kursplanen som denna uppgift täcker:
+
     • **Sätta upp ett nytt Umbraco-projekt**
+    
     • **Sätta upp ett nytt Umbraco CMS-projekt**
+    
     • **Versionhantering med Git**
+    
     • Utveckla de komponenter som behövs av CMS:et
+    
     • Analysera och implementera avancerade webblösningar med Umbraco CMS
 
 Inlämningsuppgift 2:
