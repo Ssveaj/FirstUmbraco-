@@ -14,16 +14,23 @@ Mål i kursplanen som denna uppgift täcker:
     • Analysera och implementera avancerade webblösningar med Umbraco CMS
 
 Inlämningsuppgift 2:
+
     • Uttöka det projekt du redan skapat eller starta upp ett nytt Umbraco-projekt
+    
     • Använda dig utav Document Types, Data Types, Templates, Plugins, Controllers, ViewModels
+    
     • Valfritt att versionshantera med Git/Github
 
 Bedömningsnivå för G:
+
     • Använt dig av Document Types, Data Types, Templates, Plugins, Controllers, ViewModels för att bygga din hemsida.
 
 Bedömingsnivå för VG:
+
     • Målen för G
+    
     • Har utforskat och använt saker som inte har lärts ut under föreläsningar
+    
     • Applikationen är användarvänlig
 
 Uppgift:
